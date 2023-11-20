@@ -6,7 +6,7 @@
     background-image: url(../images/hermes-rivera-newhL3aprGk-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 70vh;
+    height: 150vh;
     display: grid;
     place-items: center;
 
@@ -20,7 +20,7 @@
     font-family: $font-family;
 }
 
-.container__h2 {
+.container__p, .container__h2 {
     color: $color-white;
     letter-spacing: 6px;
     font-size: 50px;
@@ -37,6 +37,13 @@
 }
 
 
+.container__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
+
+
 .btn__a {
     text-decoration: none;
     color: $color-black;
@@ -46,4 +53,19 @@
     }
     
 }
+
+// BOOTSTRAP
+
+.card {
+    z-index: 1;
+}
+
+.card-body {
+    background-color: black;
+    color: white !important;
+    display: grid;
+    place-items: center;
+}
+
+
 
