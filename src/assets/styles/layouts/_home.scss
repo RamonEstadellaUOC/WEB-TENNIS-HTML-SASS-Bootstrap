@@ -1,0 +1,38 @@
+.index__container {
+    margin-top: 190px;
+    background-image: url(../images/hermes-rivera-newhL3aprGk-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 35vw;
+    display: grid;
+    place-items: center;
+
+}
+
+.container__h1 {
+    color: white;
+    letter-spacing: 13px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.container__h2 {
+    color: white;
+    letter-spacing: 6px;
+    font-size: 50px;
+}
+
+.container__btn {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #DEEF40;
+    color: black;
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+}
+.container__btn:hover {
+    background-color: black;
+    color:  #DEEF40;
+}
+
