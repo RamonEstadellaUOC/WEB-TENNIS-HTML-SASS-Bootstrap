@@ -1,0 +1,11 @@
+// MIXINS
+
+@mixin btn {
+    font-size: 30px;
+    padding: 10px;
+    background-color: $color-yellow;
+    color: $color-black;
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+}
