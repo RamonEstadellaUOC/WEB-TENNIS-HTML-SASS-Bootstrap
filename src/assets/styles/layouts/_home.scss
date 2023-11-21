@@ -13,11 +13,7 @@
 }
 
 .container__h1 {
-    color: $color-white;
-    letter-spacing: 13px;
-    font-size: 100px;
-    font-weight: bold;
-    font-family: $font-family;
+    @include h1;
 }
 
 .container__p, .container__h2 {
