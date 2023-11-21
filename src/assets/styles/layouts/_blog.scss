@@ -1,0 +1,42 @@
+// MAIN BLOG
+
+
+.main__blog {
+    margin-top: 190px;
+    background-color: $color-blue;
+}
+
+.blog__h1 {
+    @include h1;
+    padding: 50px;
+}
+
+.blog__p {
+    @include p;
+}
+
+.carousel {
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px;
+}
+
+.figure__img {
+    width: 900px;
+    height: 550px;
+}
+
+.figure__figcap {
+    padding: 40px;
+    text-align: center;
+    color: $color-white;
+}
+
+.blog__figure {
+    text-align: center;
+    padding: 50px;
+}
+
+figure {
+    margin-bottom: 0px !important;
+}
