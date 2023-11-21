@@ -1,0 +1,29 @@
+// CONTACT
+
+.main__contact {
+    margin-top: 190px;
+    text-align: center;
+    background-color: $color-blue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: $color-white;
+}
+
+.contact__p {
+    @include p;
+}
+
+.contact__h1 {
+    @include h1;
+    padding: 50px;
+}
+
+.contact__h2 {
+    color: $color-white;
+    letter-spacing: 13px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: $font-family;
+    text-align: center;
+    padding: 50px;
+}
