@@ -65,5 +65,44 @@
     place-items: center;
 }
 
+// SUPPORT
+
+// Estilos para navegadores compatibles con Grid
+@supports (display: grid) {
+    .index__container {
+        display: grid;
+        place-items: center;
+    }
+
+    .container__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+    }
+}
+
+  // Estilos alternativos para navegadores no compatibles con Grid
+@supports not (display: grid) {
+    .index__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container__cards {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 20px; 
+    }
+    
+    /* Estilos para cada tarjeta individual dentro del contenedor */
+    .container__cards > * {
+        flex: 1 1 calc(50% - 20px); 
+        margin: 10px; 
+    }
+    
+}
+
+
 
 
