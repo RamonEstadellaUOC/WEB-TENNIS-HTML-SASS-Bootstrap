@@ -1,20 +1,28 @@
 // HOME
 
-
 .index__container {
-    margin-top: 190px;
     background-image: url(../images/hermes-rivera-newhL3aprGk-unsplash.jpg);
     background-size: cover;
     background-attachment: fixed;
-    height: 150vh;
     display: grid;
     place-items: center;
+    gap: 50px;
+    padding: 50px;
+
+    @media(max-width: 425px) {
+        padding: 10px;
+    }
 
 }
 
 .container__h1 {
     @include h1;
+
+    @media(max-width: 660px) {
+        font-size: 50px;
+    }
 }
+
 
 .container__p, .container__h2 {
     color: $color-white;
@@ -22,6 +30,20 @@
     font-size: 50px;
     font-family: $font-family;
     font-weight: bold;
+    text-align: center;
+
+    @media (max-width: 670px) {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    @media (max-width: 502px) {
+        font-size: 20px;
+    }
+
+    @media(max-width: 375px) {
+        padding: 0px;
+    }
 }
 
 .container__btn {
@@ -38,6 +60,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr; 
     gap: 20px; 
+    place-items: center;
+
+    @media (max-width: 695px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
@@ -67,41 +95,40 @@
 
 // SUPPORT
 
-// Estilos para navegadores compatibles con Grid
-@supports (display: grid) {
-    .index__container {
-        display: grid;
-        place-items: center;
-    }
+// // Estilos para navegadores compatibles con Grid
+// @supports (display: grid) {
+//     .index__container {
+//         display: grid;
+//         place-items: center;
+//     }
 
-    .container__cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 20px; 
-    }
-}
+//     .container__cards {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr; 
+//         gap: 20px; 
+//     }
+// }
 
-  // Estilos alternativos para navegadores no compatibles con Grid
-@supports not (display: grid) {
-    .index__container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+//   // Estilos alternativos para navegadores no compatibles con Grid
+// @supports not (display: grid) {
+//     .index__container {
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//     }
 
-    .container__cards {
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 20px; 
-    }
+//     .container__cards {
+//         display: flex;
+//         flex-wrap: wrap; 
+//         gap: 20px; 
+//     }
     
-    /* Estilos para cada tarjeta individual dentro del contenedor */
-    .container__cards > * {
-        flex: 1 1 calc(50% - 20px); 
-        margin: 10px; 
-    }
-    
-}
+//     /* Estilos para cada tarjeta individual dentro del contenedor */
+//     .container__cards > * {
+//         flex: 1 1 calc(50% - 20px); 
+//         margin: 10px; 
+//     }
+// }
 
 
 

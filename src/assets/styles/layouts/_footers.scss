@@ -9,10 +9,35 @@
     align-items: center;
     gap: 100px;
     font-family: $font-family-2;
+
+    @media (max-width: 1425px) {
+        gap: 20px;
+    }
+
+    @media(max-width: 610px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .uoc__img {
     width: 550px;
     height: 150px;
+
+    @media (max-width: 1110px) {
+        display: none;
+    }
+}
+
+.footer__creator {
+    @media(max-width: 610px) {
+        text-align: center;
+    }
+}
+
+.contact__info {
+    @media(max-width: 610px) {
+        text-align: center;
+    }
 }
 
