@@ -1,7 +1,6 @@
 // CONTACT
 
 .main__contact {
-    margin-top: 190px;
     text-align: center;
     background-color: $color-blue;
     padding-top: 50px;
@@ -11,11 +10,16 @@
 
 .contact__p {
     @include p;
+    padding: 20px;
 }
 
 .contact__h1 {
     @include h1;
     padding: 50px;
+
+    @media(max-width: 638px) {
+        font-size: 40px;
+    }
 }
 
 .contact__h2 {
@@ -26,4 +30,8 @@
     font-family: $font-family;
     text-align: center;
     padding: 50px;
+
+    @media(max-width: 424px) {
+        font-size: 30px;
+    }
 }
