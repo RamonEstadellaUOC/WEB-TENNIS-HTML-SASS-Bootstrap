@@ -3,15 +3,28 @@
 
 .main__blog {
     background-color: $color-blue;
+    padding: 50px;
+
+    @media(max-width: 470px) {
+        padding: 0px;
+    }
 }
 
 .blog__h1 {
     @include h1;
     padding: 50px;
+
+    @media(max-width: 406px) {
+        font-size: 40px;
+    }
 }
 
 .blog__p {
     @include p;
+
+    @media(max-width: 470px) {
+        padding: 10px;
+    }
 }
 
 .carousel {
@@ -23,6 +36,16 @@
 .figure__img {
     width: 900px;
     height: 550px;
+
+    @media(max-width: 1024px) {
+        width: 400px;
+        height: 250px;
+    }
+
+    @media(max-width: 417px) {
+        width: 200px;
+        height: 130px;
+    }
 }
 
 .figure__figcap {
@@ -34,6 +57,10 @@
 .blog__figure {
     text-align: center;
     padding: 50px;
+
+    @media(max-width: 556px) {
+        padding: 0px;
+    }
 }
 
 figure {
