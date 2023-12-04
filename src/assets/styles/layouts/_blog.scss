@@ -10,14 +10,14 @@
     }
 }
 
-.blog__h1 {
-    @include h1;
-    padding: 50px;
+// .blog__h1 {
+//     @include h1;
+//     padding: 50px;
 
-    @media(max-width: 406px) {
-        font-size: 40px;
-    }
-}
+//     @media(max-width: 406px) {
+//         font-size: 40px;
+//     }
+// }
 
 .blog__p {
     @include p;
@@ -68,6 +68,18 @@ figure {
 }
 
 
+article:has(img) {
+    border: 5px solid white; 
+}
+
+.main__blog :is(h1) {
+    @include h1;
+    padding: 50px;
+
+    @media(max-width: 406px) {
+        font-size: 40px;
+    }
+}
 
 
 
